@@ -16,7 +16,7 @@ export class RegisterComponent {
   Message:any;
   submitted=false ;
    regex = new RegExp("^[a-zA-Z ]+$");
-  constructor(private formBuilder: FormBuilder,private http:HttpClient,private service:APICallService,private router:Router) {}
+  constructor(private formBuilder: FormBuilder,private http:HttpClient,private service:APICallService,public router:Router) {}
 
   ngOnInit(): void {
     console.log("here i am ");

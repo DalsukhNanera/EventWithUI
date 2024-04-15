@@ -70,8 +70,10 @@ export class UpdateEventComponent {
   }
 
   ngOnInit(): void {
-    console.log(this.userForm);
+    
+  console.log(this.userForm);
   this.EventDataFromService = this.service.EventDataService ;
+  console.log("this is before",this.EventDataFromService);
   
 
   //console.log(this.userForm.controls['StartDate'].value);
@@ -92,6 +94,7 @@ export class UpdateEventComponent {
 
 
   submitForm(): void {
+    console.log("this is after",this.EventDataFromService);
     console.log(this.userForm);
     this.submitetd = true;
     console.log("i am in submit form");
